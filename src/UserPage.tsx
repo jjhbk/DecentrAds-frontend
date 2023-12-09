@@ -17,6 +17,7 @@ interface FetchedData {
   name: string;
   cid: string;
   des: string;
+  cidJ: string;
   avatar?: string;
 }
 
@@ -53,6 +54,7 @@ const UserPage: React.FC = () => {
           name: item.publicKey,
           cid: data.cidMedia,
           des: data.contentx,
+          cidJ: item.cid
         };
       });
 
@@ -63,6 +65,7 @@ const UserPage: React.FC = () => {
           name: item.name,
           cid: item.cid,
           des: item.des,
+          cidJ: item.cidJ,
           avatar: "",
         };
         dat.push(object);
@@ -119,6 +122,7 @@ const UserPage: React.FC = () => {
         {data.map((item, index) => (
           <div key={index} className="card" onClick={()=>{
             localStorage.setItem("i", item.cid)
+            localStorage.setItem("loc", item.cidJ)
             console.log(localStorage.getItem("i"))
           
             navigate(`/blog/${item.name}`)}}>

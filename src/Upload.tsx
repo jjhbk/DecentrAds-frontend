@@ -65,6 +65,8 @@ const Upload: React.FC = () => {
       );
 
       console.log("Upload Response:", response.data);
+
+      alert(response.data.message)
       return response.data;
     } catch (error: any) {
       console.error("Error during upload:", error);
@@ -117,6 +119,8 @@ const Upload: React.FC = () => {
 
     console.log("File Status:", output);
 
+    
+
     console.log(
       "Visit at https://gateway.lighthouse.storage/ipfs/" + output.data.Hash
     );
@@ -160,7 +164,7 @@ const Upload: React.FC = () => {
           type="text"
           value={caption}
           onChange={(e) => setCaption(e.target.value)}
-          placeholder="xxx"
+          placeholder="description"
         />
 
         <button onClick={handleUpload}>Click me</button>
