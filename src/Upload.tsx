@@ -64,9 +64,23 @@ const Upload: React.FC = () => {
         }
       );
 
+      let url =  "https://gateway.lighthouse.storage/ipfs/"+response.data.tokenURI.data.Hash
+
+      const response2 = await axios.post(
+        "http://16.170.221.43:80/mintAndTransfer",
+        {
+          transferToAddress: sessionStorage.getItem("address"),
+          tokenURI: url
+        }
+      );
+      console.log(response2)
+
+
+
+
       console.log("Upload Response:", response.data);
 
-      alert(response.data.message)
+      alert("Minting successfull. Your tokenId is "+ response2.data.tokenId + " and can be accessed at " + url)
       return response.data;
     } catch (error: any) {
       console.error("Error during upload:", error);
@@ -167,7 +181,7 @@ const Upload: React.FC = () => {
           placeholder="description"
         />
 
-        <button onClick={handleUpload}>Click me</button>
+        <button  onClick={handleUpload}>Click me</button>
       </div>
     </div>
   );
