@@ -167,21 +167,23 @@ const Upload: React.FC = () => {
       </div>
       <div className="line"></div>
       <div className="inner-box-31">
-        <label htmlFor="fileInput">Upload File</label>
+        <label>Upload File</label>
         <input
           id="fileInput"
           onChange={(e) => uploadFile(e.target.files)}
           type="file"
+          
         />
 
         <input
+        
           type="text"
           value={caption}
           onChange={(e) => setCaption(e.target.value)}
           placeholder="description"
         />
 
-        <button  onClick={handleUpload}>Click me</button>
+        <button className="button-sec" style ={{width:"100%"}} onClick={handleUpload}>Upload and Mint</button>
       </div>
     </div>
   );

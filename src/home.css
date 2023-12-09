@@ -83,16 +83,18 @@ body{
   .inner-box-31 {
     position: absolute;
     top:20%;
-    left: 25%;
+    left: 40%;
   
   
     height: 20%;
     padding: 30px;
     display: flex;
     flex-direction: column;
+    
+    justify-content: center;
     gap: 20px;
   
-    width: 30%;
+    width: 20%;
   
     background-color: #222;
     color: #fff;
@@ -104,6 +106,8 @@ body{
   
   .fileInput{
     display: none;
+    width: 50%;
+    font-family: "Poppins" sans-serif;
   }
   
   .stack-data {

@@ -16,7 +16,7 @@
   }
 
   .button{
-    width:70%;
+    width:100%;
     align-items: center;
     background: #6e42e5;
     border-radius: 10px;
@@ -30,8 +30,6 @@
     line-height: 140%;
     padding: 8px 16px;
     float:right;
-    
-    margin-left:12px;
     border: none;
   cursor: pointer;
  
@@ -40,25 +38,25 @@
    
    border-radius: 30px;
    display: flex;
-   float: right;
-   width: 290px;
-   justify-content: center;
+   width: 400px;
+  
+   justify-content: left;
     line-height: 140%;
     border-radius: 6px;
-    background-color: #222;
+   
     font-family: 'Poppins' sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
     border-radius: 10px;
-    margin-right: 10%;
+  
     
   }
 
   .logo {
     margin-right: 8px;
     font-weight: bold;
-    ;
+    
     width:30%;
     color: white;
     justify-content: center;

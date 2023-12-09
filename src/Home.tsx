@@ -4,9 +4,13 @@ import "./home.css";
 import { ethers } from "ethers";
 import { useNavigate } from "react-router-dom";
 
+
+
+
 const Home: React.FC = () => {
     
     let navigate = useNavigate()
+   
 
     const signin = async () => {
         console.log("entered");
@@ -34,7 +38,7 @@ const Home: React.FC = () => {
                             <br />
                             <h1>EXPLORE</h1>
                             <div className="button-sec" onClick={()=>{
-                            sessionStorage.setItem("tab","2")
+                            sessionStorage.setItem("tab","0")
                             signin()
                             navigate('/feed')}}> Get Started </div>
                         </div>
