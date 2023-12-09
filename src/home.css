@@ -1,0 +1,282 @@
+/* home.css */
+body{
+    background-color: black;
+
+}
+
+.inner-box {
+    position: relative;
+    padding-left: 13%;
+    padding-right: 15%;
+    height: 80%;
+  
+    padding-top: 3%;
+  }
+  
+  .inner-box-1 {
+    position: relative;
+    height: 10%;
+  
+    display: flex;
+  
+    width: 97%;
+  
+    background-color: #222;
+    color: #fff;
+  
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .inner-box-w {
+    position: relative;
+    height: 80%;
+    padding: 20%;
+    gap: 40px;
+  
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .inner-box-2 {
+    position: relative;
+    height: 80%;
+  
+    display: flex;
+    gap: 3%;
+  
+    width: 97%;
+  
+    background-color: black;
+    color: #fff;
+  
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .inner-box-3 {
+    position: relative;
+    height: 95%;
+    font-family: "Poppins" sans-serif;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  
+    width: 49%;
+  
+    background-color: #222;
+    color: #fff;
+  
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .inner-box-31 {
+    position: absolute;
+    top:20%;
+    left: 25%;
+  
+  
+    height: 20%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  
+    width: 30%;
+  
+    background-color: #222;
+    color: #fff;
+  
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .fileInput{
+    display: none;
+  }
+  
+  .stack-data {
+    width: 100%; /* Updated this to ensure the container takes full width */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Added this to center align content horizontally */
+    gap: 9px;
+    margin-top: 12px;
+  }
+
+
+  .button-12{
+    width:70px;
+    align-items: center;
+    background: #6e42e5;
+    border-radius: 10px;
+    color: whitesmoke;
+    font-family: 'Poppins' sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    gap: 10px;
+    justify-content: center;
+    display: flex;
+    line-height: 140%;
+    padding: 8px 16px;
+    float:right;
+    border: none;
+     
+   cursor: pointer;
+ 
+  }
+  
+  
+  
+  
+  .button-sec {
+    width: 38%;
+    height: 40px;
+    align-items: center;
+    background: #6e42e5;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    font-family: "Poppins" sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    gap: 10px;
+    justify-content: center;
+    line-height: 140%;
+    padding: 8px 16px;
+
+  
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  .feed-page{
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding: 2%;
+    gap:50px;
+  
+  
+  
+  }
+  
+  .card{
+    width: 400px;
+    padding: 30px;
+    padding-right: 30px;
+    height: auto;
+    background-color: #222;
+    border-radius: 8px;
+    color: #fff;
+    border: 1px solid grey;
+  
+    display: flex; /* Enables Flexbox for .card */
+    flex-direction: column; /* Stack the children vertically */
+  
+    align-items: center; /* Center children horizontally */
+    gap:20px;
+  
+  }
+
+  .advert{
+    width: 500px;
+    height:200px;
+    background-color: #222;
+    border-radius: 8px;
+    color: #fff;
+    border: 1px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+  }
+
+  .my-image{
+    width: 400px;
+    height:400px;
+    background-color: #222;
+    border-radius: 8px;
+    color: #fff;
+    border: 1px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+  }
+
+  .creator{
+    font-family: "Poppins" sans-serif;
+    color: white;
+    font-weight: 500;
+    width: 100%;
+    
+    display: flex;
+    align-items: right;
+    justify-content: end;
+    
+
+  }
+  
+  .card img{
+    width: 50px;
+    height: 50px;
+    filter: blur(4px);
+    border-radius: 50%;
+    border: 1px solid #f3f3f3;
+    
+  }
+  
+  
+  
+  
+  
+  
+  .upload-container {
+    background-color: #222;
+    height: 70%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  
+  
+  .loading-circle {
+    border: 4px solid #f3f3f3; /* Light grey border */
+    border-top: 4px solid #0db9d7; /* Neon blue border top */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  
+  
